@@ -1,0 +1,2 @@
+* Have Vagrant grab the latest version of Ubuntu, not the older one it grabs by default.
+* Have the echo statements have a little more formatting, so the user can follow the install more easily
