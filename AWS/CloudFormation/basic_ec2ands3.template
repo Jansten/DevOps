@@ -1,0 +1,26 @@
+{
+	"AWSTemplateFormatVersion" : "2010-09-09",
+	"Description" : "This is a basic template to deploy an S3 bucket and an EC2 VM",
+	
+	"Resources" : {
+		"S3Bucket" : 
+		{
+			"Type" : "AWS::S3::Bucket",
+				"Properties" : 
+				{
+						"AccessControl" : "PublicRead",
+						"BucketName" : "la2016-bostonhannon-testing-59876"
+				}
+		},
+
+		"Ec2Instance" : 
+		{
+			"Type" : "AWS::EC2::Instance",
+			"Properties" : 
+			{
+				"ImageId" : "ami-7172b611",
+				"InstanceType" : "t2.micro"
+			}
+		}
+	}
+}
